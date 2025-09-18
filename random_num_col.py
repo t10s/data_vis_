@@ -2,6 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 
+####################################################################################
+# 1. first part just playing around with randomly coloured pixels
+# 2. second part is randomly coloured darth vader
+####################################################################################
+
 # generate a plot with random coloured pixels. 
 # first generate an array of random numbers in the required pixel x pixel size and map numbers to each of the unique digits
 # create an empty image
@@ -78,8 +83,10 @@ plt.imshow(rgb_half)
 plt.axis('off')
 plt.show()
 
-##### now try to randomly colour the darth vader image
+####################### now try to randomly colour the darth vader image #######################
 # read in the image as img
+# change to greyscale
+img = img.convert("L")
 
 # convert the image to an array
 img_array = np.array(img)
@@ -89,7 +96,9 @@ plt.imshow(img_array, cmap="grey")
 plt.axis("off")
 
 # resize the image
-new_size = (500, 500)
+#new_size = (134, 134) # only probe rts
+new_size = (189, 189) # prime and probe rts
+
 img_resized = img.resize(new_size, Image.NEAREST)
 
 img_array_resize = np.array(img_resized)
