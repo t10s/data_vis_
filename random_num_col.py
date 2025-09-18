@@ -83,7 +83,10 @@ plt.imshow(rgb_half)
 plt.axis('off')
 plt.show()
 
+#==============================================================================================#
 ####################### now try to randomly colour the darth vader image #######################
+#==============================================================================================#
+
 # read in the image as img
 # change to greyscale
 img = img.convert("L")
@@ -96,8 +99,8 @@ plt.imshow(img_array, cmap="grey")
 plt.axis("off")
 
 # resize the image
-#new_size = (134, 134) # only probe rts
-new_size = (189, 189) # prime and probe rts
+new_size = (134, 134) # only probe rts
+#new_size = (189, 189) # prime and probe rts
 
 img_resized = img.resize(new_size, Image.NEAREST)
 
