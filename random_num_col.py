@@ -122,7 +122,7 @@ black_nums = np.random.randint(0, 10, size=black_pixels_total)
 white_nums = np.random.randint(0, 10, size=white_pixels_total)
 
 # assign colours
-black_colors = {
+white_colors = {
     0: [255, 0, 0],    # Red
     1: [0, 255, 0],    # Green
     2: [0, 0, 255],    # Blue
@@ -135,7 +135,7 @@ black_colors = {
     9: [128, 128, 128] # Gray
 }
 
-white_colors = {
+black_colors = {
     0: [200, 200, 200],
     1: [200, 200, 200],
     2: [180, 180, 180],
